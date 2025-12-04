@@ -5,13 +5,20 @@ This project focuses on extracting visual attributes (specifically main colors) 
 
 ## How to Run
 
-1.  **Install Dependencies**:
+1.  **Install Dependencies and data**:
     First, ensure you have the required packages installed:
     ```bash
     pip install -r requirements.txt
     ```
+    Then download item_data.txt dataset, copy to the project folder and unzip via this link: https://drive.google.com/file/d/1UsAu9XxdTQUDopPgXpmA0M6FRbzDn5V0/view?usp=sharing
 
-2.  **Run the Process**:
+2.  **Download Images**:
+    If the image data in the `images/` folder is missing or incomplete, you can download them again using:
+    ```bash
+    python download_images.py
+    ```
+
+3.  **Run the Process**:
     You can run the full extraction process in two ways:
     
     -   **Python Script**: Run the script directly to extract colors.
@@ -23,11 +30,7 @@ This project focuses on extracting visual attributes (specifically main colors) 
         jupyter notebook extract_main_color.ipynb
         ```
 
-3.  **Download Images (Optional)**:
-    If the image data in the `images/` folder is missing or incomplete, you can download them again using:
-    ```bash
-    python download_images.py
-    ```
+
 
 ## File Descriptions
 
